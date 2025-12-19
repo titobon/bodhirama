@@ -1,0 +1,993 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* main.css */
+
+html,
+body {
+  /* {{{ */
+  scrollbar-color: #9A6A2E rgba(0, 0, 0, 0.23);
+  /* Ochre scrollbar */
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  font-size: 20px;
+  bottom: 0;
+}
+
+/* }}} */
+:root {
+  /* Define the base font color {{{ */
+  --font-size-xs: 0.7rem;
+  --font-size-sm: 0.8rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 3rem;
+}
+
+/* }}} */
+
+body {
+  position: relative;
+  isolation: isolate;
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--font-size-md);
+  background-color: #FAF8F0;
+  color: #424242;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('../multimedia/images/logo_bodhirama.jpeg');
+  background-size: cover;
+  background-position: center;
+
+  /* 🔥 estira solo en horizontal */
+  transform: scaleX(1.65) scaleY(0.95);
+
+  filter: blur(20px);
+  z-index: -2;
+}
+
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-color: rgba(250, 248, 240, 0.35);
+  z-index: -1;
+}
+
+/* 
+body {
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--font-size-md);
+  background-color: #fffff9;
+  color: #424242;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url('../multimedia/images/derecha_logo.png');
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  filter: brightness(1.1) grayscale(0.1) opacity(0.7);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body::before {
+  left: 0;
+  background-position: right center;
+  transform: scaleX(-1);
+}
+
+body::after {
+  right: 0;
+  background-position: right center;
+} */
+
+
+/* }}} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* {{{ */
+  font-family: 'Lora', serif;
+  /* Classic serif font for headings */
+  color: #9A6A2E;
+  /* Ochre/robe color for headings */
+}
+
+/* }}} */
+a {
+  /* {{{ */
+  color: #8D6E63;
+  /* Muted earthy brown for links */
+  text-decoration: none;
+}
+
+/* }}} */
+.noticias-lista a {
+  /* {{{ */
+  color: #8D6E63;
+  /* Consistent link color */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* }}} */
+.noticias-lista a:hover {
+  /* {{{ */
+  color: #9A6A2E;
+  /* Hover effect with the primary ochre color */
+}
+
+/* }}} */
+* {
+  /* {{{ */
+  /* Reset de estilos */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* }}} */
+
+/* Estilos generales */
+body {
+  /* {{{ */
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* }}} */
+h2 {
+  /* {{{ */
+  text-align: left;
+  z-index: 2;
+  margin-left: 50px;
+
+  font-optical-sizing: auto;
+  font-weight: 700;
+  /* Bolder for Lora */
+}
+
+/* }}} */
+h3 {
+  /* {{{ */
+  font-weight: 700;
+}
+
+/* }}} */
+h4 {
+  /* {{{ */
+  font-weight: 700;
+  font-size: var(--font-size-sm);
+  /* Este se usa en el journal para las fechas */
+}
+
+/* }}} */
+
+
+/* 
+.responsive-image {
+  width: 30%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow:
+    0 8px 20px 6px rgba(203, 125, 30, 0.85),
+    0 16px 48px 14px rgba(203, 125, 30, 0.55);
+  border: 2px solid #9A6A2E;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+
+.responsive-image {
+  width: 7%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow:
+    0 8px 20px 6px rgba(203, 125, 30, 0.85),
+    0 16px 48px 14px rgba(203, 125, 30, 0.55);
+  border: 2px solid #9A6A2E;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.journalContainer {
+  /* {{{ */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh - 90px);
+
+  /* Restamos la altura del navbar */
+  flex-grow: 1;
+  bottom: 0;
+}
+
+/* }}} */
+.journal p {
+  /* {{{ */
+  color: #424242;
+}
+
+/* }}} */
+.journal {
+  /* {{{ */
+  margin-top: 2.0rem;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* }}} */
+.journal-container {
+  /* {{{ */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5%;
+  height: fit-content;
+}
+
+/* }}} */
+
+.infoContainer {
+  /* {{{ */
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh - 90px);
+  /* Restamos la altura del navbar */
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  bottom: 0;
+  color: #424242;
+  opacity: 1;
+}
+
+/* }}} */
+.titulo {
+  /* {{{ */
+  text-align: center;
+  margin-top: 50px;
+  z-index: 2;
+  font-optical-sizing: auto;
+  font-size: var(--font-size-xxl);
+
+}
+
+/* }}} */
+.header-image {
+  /* {{{ */
+  margin-left: 50px;
+  height: 70px;
+  width: 70px;
+  opacity: 1;
+  border-radius: 0%;
+  border: 10px solid #000000;
+}
+
+/* }}} */
+.our_group_container2 {
+  /* {{{ */
+  align-items: right;
+  width: 300px;
+  margin-left: 750px;
+  border-right: 3px solid #949494;
+  border-bottom: 1px solid #949494;
+}
+
+/* }}} */
+.introductionContainer {
+  /* Esto es la parte que dice Our group {{{ */
+  padding: 50px;
+  width: 70vw;
+}
+
+/* }}} */
+.introduccion {
+  /* Esto es la parte que dice Our group {{{ */
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* }}} */
+.contenedor {
+  /* {{{ */
+  width: 100vw;
+  display: flex;
+}
+
+/* }}} */
+.newsSection {
+  /* {{{ */
+  width: 30vw;
+  margin-top: 50px;
+  margin-right: 100px;
+}
+
+/* }}} */
+.miembros {
+  /* {{{ */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* }}} */
+.blog {
+  /* {{{ */
+  margin-right: 10px;
+}
+
+/* }}} */
+.telefono {
+  /* {{{ */
+  margin-top: 12px;
+}
+
+/* }}} */
+.redes-sociales {
+  /* {{{ */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  transition: all 0.3s ease;
+}
+
+/* }}} */
+.noticias-lista {
+  /* {{{ */
+  /* Simplified background for a cleaner, minimalist look */
+  background: none;
+  /* Remove complex background image and gradient */
+  border-radius: 0;
+  /* Remove rounded corners */
+  border: none;
+  /* Remove border */
+  box-shadow: none;
+  /* Remove shadow */
+  backdrop-filter: none;
+  /* Remove blur filter */
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding: 10%;
+}
+
+/* }}} */
+.publication p {
+  /* {{{ */
+  color: #666;
+  margin: 10px 0;
+}
+
+/* }}} */
+.publication-year-header {
+  /* {{{ */
+  cursor: pointer;
+  color: #8D6E63;
+  /* Use the new link color */
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+/* }}} */
+.publication-year-header:hover {
+  /* {{{ */
+  background-color: #eef4ff;
+}
+
+/* }}} */
+.year-header {
+  /* {{{ */
+  background-color: #eee;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+}
+
+/* }}} */
+.year-header:hover {
+  /* {{{ */
+  background-color: #ccc;
+}
+
+/* }}} */
+.publication {
+  /* {{{ */
+  padding: 5px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* }}} */
+.publicationsContainer {
+  /* {{{ */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #9A6A2E;
+  /* Use the new primary color */
+}
+
+/* }}} */
+.noticia p {
+  /* {{{ */
+  color: #424242;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/* }}} */
+.noticia {
+  /* {{{ */
+  margin-top: 0.7rem;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* }}} */
+.noticia:hover {
+  /* Este es lo que define que sucede cuando esta sobre la noticia, que lo como que resalta {{{ */
+  background-color: rgba(154, 106, 46, 0.1);
+  /* Use a transparent version of the new primary color */
+  border-radius: 10%;
+  transform: scale(1.05);
+  /* Slightly reduced scale for subtlety */
+}
+
+/* }}} */
+.meeting-container {
+  /* {{{ */
+  /* Simplified background for a cleaner, minimalist look */
+  background: transparent;
+  /* Remove complex background */
+  border-radius: 0;
+  /* Remove rounded corners */
+  border: none;
+  /* Remove border */
+  box-shadow: none;
+  /* Remove shadow */
+  backdrop-filter: none;
+  /* Remove blur filter */
+  z-index: -2;
+}
+
+/* }}} */
+.reunion {
+  /* {{{ Esto controla como se ve lo de Meetings en la pagina principal*/
+  margin-bottom: 0.7rem;
+  margin-top: 0.7rem;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* }}} */
+.reunion:hover {
+  /* {{{ */
+}
+
+/* }}} */
+.modal {
+  /* Estilos del modal {{{ */
+  display: none;
+  /* Ocultar el modal por defecto */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  margin: 25% 25%;
+  padding: 0px;
+  border: 1px solid #888;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+/* }}} */
+
+.modal h2 {
+  /* {{{ */
+  margin-bottom: 30px;
+}
+
+/* }}} */
+.modal p {
+  /* {{{ */
+  font-weight: 500;
+}
+
+/* }}} */
+.close {
+  /* {{{ */
+  float: right;
+  font-size: 28px;
+  /* Manual para cerrar algun modal por ahi */
+  font-weight: bold;
+}
+
+/* }}} */
+.close:hover,
+.close:focus {
+  /* {{{ */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* }}} */
+.container {
+  /* Cosas que estaban en noticias.css {{{ */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  /* Fondo blanco para un contraste sutil */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra muy tenue */
+  border-radius: 0;
+  /* Removed border-radius */
+  margin-top: 120px;
+}
+
+/* }}} */
+.news-container {
+  /* Si no se ponen estas cosas queda una columna de noticias {{{ */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* }}} */
+.news-card {
+  /* {{{ */
+  border: 1px solid #e1e4e8;
+  /* Keep a subtle border */
+  border-radius: 0;
+  /* Removed border-radius */
+  padding: 20px;
+  margin: 10px;
+  width: calc(28% - 20px);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: none;
+  /* Removed shadow */
+  border: 1px solid #9A6A2E;
+  /* Use a subtle border with the new primary color */
+}
+
+/* }}} */
+.news-card p {
+  /* {{{ */
+  color: #626262;
+  margin-bottom: 20px;
+}
+
+/* }}} */
+.page-link {
+  /* {{{ */
+  /*  para que los links a otras noticias salgan bonitos */
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 5px;
+  background-color: #8D6E63;
+  /* Use the new link color */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* }}} */
+.page-link:hover {
+  /* {{{ */
+  background-color: #9A6A2E;
+  /* Hover effect with the primary color */
+}
+
+/* }}} */
+.read-more {
+  /* {{{ */
+  /* Para que el read more este bonito */
+  font-weight: 700;
+  color: #8D6E63;
+  /* Use the new link color */
+}
+
+/* }}} */
+
+.nav_bar ul li a.active {
+  /* Highlight active navigation link */
+  background-color: rgba(154, 106, 46, 0.2);
+  /* A subtle, transparent version of the primary ochre color */
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+
+.bio-image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bio-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /* Optional: to give slightly rounded corners */
+}
+
+/* Filter Styles */
+.filter-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background-color: transparent;
+  border: 1px solid #9A6A2E;
+  color: #9A6A2E;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--font-size-sm);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #9A6A2E;
+  color: #FAF8F0;
+}
+
+/* Gallery Styles */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  /* Needed for the play icon overlay */
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item.video::after {
+  content: '▶';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  opacity: 0.8;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+  /* Make sure it doesn't interfere with clicks */
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item img,
+.gallery-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90vw;
+  max-height: 85vh;
+  display: block;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-modal:hover {
+  color: #bbb;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Estilos para móviles y tables {{{ */
+@media (min-width: 600px) and (max-width: 1000px) {
+
+  /* Esto son tablets {{{ */
+  html {
+    font-size: 16px;
+  }
+
+  .infoContainer {
+    /* {{{ */
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  /* }}} */
+  .journalContainer {
+    /* {{{ */
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  /* }}} */
+  .introductionContainer {
+    /* {{{ */
+    width: 100%;
+    padding: 15px;
+    order: 1;
+    /* Asegura que introductionContainer venga primero */
+  }
+
+  /* }}} */
+  .newsSection {
+    /* {{{ */
+    width: 100%;
+    margin-top: 20px;
+    /* Añade un poco de espacio antes de la sección de noticias */
+    order: 2;
+    /* Asegura que newsSection venga después */
+  }
+
+  /* }}} */
+  .our_group_container2,
+  .our_group_container3 {
+    /* {{{ */
+    width: 100%;
+    margin-left: 0;
+    border-right: none;
+  }
+
+  /* }}} */
+}
+
+/* }}} */
+@media (max-width: 768px) {
+
+  /* {{{ */
+  html {
+    font-size: 14px;
+  }
+
+  .nav_bar {
+    /* {{{ */
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+    /* Añadir padding para un mejor espaciado vertical */
+  }
+
+  /* }}} */
+  .nav_bar ul {
+    /* {{{ */
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /* }}} */
+  .news-card {
+    /* {{{ */
+    width: 100%;
+    /* Una columna para móviles */
+    margin: 10px 0;
+    /* Ajustar márgenes para evitar el desbordamiento */
+  }
+
+  /* }}} */
+  .container,
+  .news-container {
+    /* {{{ */
+    padding: 10px;
+    margin-top: 90px;
+    /* Ajustar el margen superior debido al cambio en la barra de navegación */
+  }
+
+  /* }}} */
+}
+
+/* }}} */
+@media (max-width: 599px) {
+
+  /* {{{ */
+  h1.titulo {
+    /* {{{ */
+    margin-top: 20px;
+  }
+
+  /* }}} */
+  .journalContainer {
+    /* {{{ */
+    flex-direction: column;
+  }
+
+  /* }}} */
+  .infoContainer {
+    /* {{{ */
+    flex-direction: column;
+  }
+
+  /* }}} */
+  .introductionContainer {
+    /* {{{ */
+    width: 100%;
+    padding: 15px;
+    order: 1;
+    /* Asegura que introductionContainer venga primero */
+  }
+
+  /* }}} */
+  .newsSection {
+    /* {{{ */
+    width: 100%;
+    margin-top: 20px;
+    /* Añade un poco de espacio antes de la sección de noticias */
+    order: 2;
+    /* Asegura que newsSection venga después */
+  }
+
+  /* }}} */
+  .our_group_container2,
+  .our_group_container3 {
+    /* {{{ */
+    width: 100%;
+    margin-left: 0;
+    border-right: none;
+  }
+
+  /* }}} */
+  #footer-container {
+    /* {{{ */
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* }}} */
+}
+
+/* }}} */
+@media (max-width: 480px) {
+
+  /* {{{ */
+  .nav_bar a {
+    /* {{{ */
+    /* font-size: 18px; */
+    /* Reducir aún más el tamaño de la fuente */
+  }
+
+  /* }}} */
+  .news-card {
+    /* {{{ */
+    flex-direction: column;
+  }
+
+  /* }}} */
+  .pagination {
+    /* {{{ */
+    flex-wrap: wrap;
+    /* Permitir que la paginación envuelva en múltiples líneas */
+  }
+
+  /* }}} */
+}
+
+/* }}} */
+/* Estilos para móviles }}} */
+
+@media (max-width: 1000px) {
+
+  body::before,
+  body::after {
+    display: none;
+  }
+}

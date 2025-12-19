@@ -1,0 +1,77 @@
+[
+  {
+    "id": "1",
+    "title": {
+      "en": "Weekend Meditation Retreat",
+      "id": "Retret Meditasi Akhir Pekan"
+    },
+    "date": "2025-04-05",
+    "time": {
+      "en": "Friday 6:00 PM - Sunday 3:00 PM",
+      "id": "Jumat 18:00 - Minggu 15:00"
+    },
+    "location": {
+      "en": "Serene Dhamma Center, City, Country",
+      "id": "Pusat Dhamma Tenang, Kota, Negara"
+    },
+    "speaker": {
+      "en": "Ajahn Visalo",
+      "id": "Ajahn Visalo"
+    },
+    "summary": {
+      "en": "A silent meditation retreat focusing on Vipassana and Metta practices. Open to all levels of experience.",
+      "id": "Retret meditasi hening yang berfokus pada praktik Vipassana dan Metta. Terbuka untuk semua tingkat pengalaman."
+    },
+    "registration_link": "#"
+  },
+  {
+    "id": "2",
+    "title": {
+      "en": "Public Dhamma Talk: 'The Joy of Renunciation'",
+      "id": "Ceramah Dhamma Umum: 'Kegembiraan Pelepasan'"
+    },
+    "date": "2025-05-10",
+    "time": {
+      "en": "7:00 PM - 8:30 PM",
+      "id": "19:00 - 20:30"
+    },
+    "location": {
+      "en": "Community Hall, City, Country",
+      "id": "Aula Komunitas, Kota, Negara"
+    },
+    "speaker": {
+      "en": "Ajahn Visalo",
+      "id": "Ajahn Visalo"
+    },
+    "summary": {
+      "en": "Ajahn Visalo will deliver a public talk on the profound happiness found in letting go and simplifying one's life.",
+      "id": "Ajahn Visalo akan menyampaikan ceramah umum tentang kebahagiaan mendalam yang ditemukan dalam melepaskan dan menyederhanakan hidup."
+    },
+    "registration_link": "#"
+  },
+  {
+    "id": "3",
+    "title": {
+      "en": "Online Q&A Session",
+      "id": "Sesi Tanya Jawab Online"
+    },
+    "date": "2025-06-15",
+    "time": {
+      "en": "9:00 AM - 10:00 AM (GMT+7)",
+      "id": "09:00 - 10:00 (GMT+7)"
+    },
+    "location": {
+      "en": "Zoom (Link to be provided)",
+      "id": "Zoom (Tautan akan diberikan)"
+    },
+    "speaker": {
+      "en": "Ajahn Visalo",
+      "id": "Ajahn Visalo"
+    },
+    "summary": {
+      "en": "An opportunity to ask questions directly to Ajahn Visalo about practice, teachings, and daily life.",
+      "id": "Kesempatan untuk bertanya langsung kepada Ajahn Visalo tentang praktik, ajaran, dan kehidupan sehari-hari."
+    },
+    "registration_link": "#"
+  }
+]

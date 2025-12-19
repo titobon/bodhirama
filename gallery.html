@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="gallery_page_title" data-i18n-target="title">Photo Gallery - Wat Pah Bodhirama</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <br />
+    <br />
+    <div id="navbar-container"></div>
+    <br />
+
+    <div class="container">
+        <h1 class="titulo" data-i18n="gallery_h1_title">Photo Gallery</h1>
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="photos">Photos</button>
+            <button class="filter-btn" data-filter="videos">Videos</button>
+        </div>
+        <div class="gallery-grid" id="gallery-grid">
+            <!-- Images will be loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <!-- Modal for Full-Screen Image View -->
+    <div id="image-modal" class="modal-overlay" style="display: none;">
+        <span class="close-modal">&times;</span>
+        <a class="prev">&#10094;</a>
+        <div class="modal-content-container">
+            <img class="modal-content" id="modal-image">
+            <video class="modal-content" id="modal-video" controls style="display: none;"></video>
+        </div>
+        <a class="next">&#10095;</a>
+        <div id="caption"></div>
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="Javascript/i18n.js"></script>
+    <script src="Javascript/loadComponents.js"></script>
+    <script src="Javascript/gallery.js"></script>
+</body>
+</html>

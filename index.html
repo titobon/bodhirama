@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- {{{ -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title data-i18n="index_page_title">Wat Pah Bodhirama</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <!-- }}} -->
+  <body>
+    <!-- Navbar {{{ -->
+    <br />
+    <br />
+    <div id="navbar-container"></div>
+    <br />
+    <!-- Navbar end }}} -->
+    <!-- Titulo, imagen y meta {{{ -->
+    <div class="container">
+      <h1 class="titulo" data-i18n="index_page_title">Wat Pah Bodhirama</h1>
+      <div>
+        <img
+          src="multimedia/images/logo_buda.png"
+          alt="Image of Ajahn Visalo or a serene landscape"
+          class="responsive-image"
+        />
+      </div>
+      <!-- Titulo e imagen }}} -->
+      <div class="infoContainer">
+        <!-- {{{ -->
+        <div class="introductionContainer">
+          <!-- Lo del lado izquierdo {{{ -->
+          <h2>Welcome to Wat Pah Bodhirama <br /></h2>
+          <p class="introduccion">
+            <!-- Texto principal {{{ -->
+            Wat Pah Bodhirama is a Buddhist monastery located in Bali,
+            Indonesia, dedicated to the practice and dissemination of the Dhamma
+            in the Forest Tradition. This website serves as a resource for those
+            interested in learning from the teachings of Ajahn Visalo and
+            participating in the life of the monastery.
+            <br /><br />
+            Here you will find information about upcoming events, Dhamma talks,
+            and guidelines for visiting and practicing with the community. Our
+            aim is to provide a clear and inspiring introduction to the practice
+            of mindfulness and compassion.
+          </p>
+          <br /><br />
+          <!-- }}} -->
+          <div class="seccion">
+            <!-- Aca viene lo de los meetings {{{ -->
+            <h2>Upcoming Events <br /></h2>
+            <div class="meeting-container" id="meetings-container">
+              <p>
+                Please check back soon for information on upcoming retreats,
+                Dhamma talks, and other events.
+              </p>
+            </div>
+            <h2 id="modal-title">
+              <!-- Usa Javascript para recoger titulo -->
+            </h2>
+            <p id="modal-description">
+              <!-- Usa Javascript para recoger contenido -->
+            </p>
+            <!-- Otros detalles de la reunión -->
+          </div>
+          <!-- }}} -->
+        </div>
+        <!-- class="introductionContainer" }}} -->
+        <div class="newsSection">
+          <!-- {{{ -->
+          <h2>Latest Announcements<br /></h2>
+          <div class="noticias-lista" id="noticias-container">
+            <p>
+              No new announcements at this time. Please visit the Events page
+              for more details.
+            </p>
+          </div>
+        </div>
+        <!-- }}} -->
+      </div>
+      <!-- }}} -->
+    </div>
+    <!-- Footer {{{  -->
+    <div id="footer-container"></div>
+    <!-- Footer }}}  -->
+    <!-- Scripts {{{ -->
+    <script src="Javascript/homepageLoader.js"></script>
+    <script src="Javascript/i18n.js"></script>
+    <script src="Javascript/loadComponents.js"></script>
+    <!-- Scripts }}} -->
+  </body>
+</html>
+<!-- {{{ -->
+<!-- }}} -->

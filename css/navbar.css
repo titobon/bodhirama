@@ -1,0 +1,195 @@
+/* Base de estilos para la navbar */
+.nav_bar {
+  position: fixed;
+  /* Cambiado de absolute a fixed para mejor visibilidad */
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  /* Ajuste para alinear logo y menú */
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 0 20px;
+  /* Agregado padding para no pegar contenido a los bordes */
+  font-weight: 400;
+  color: #ffffff;
+  background-color: rgba(49, 28, 0, 0.8);
+  /* Dark, earthy brown tint */
+  /* Ajuste de opacidad para mejor lectura */
+  z-index: 1000;
+  /* Asegura que la navbar esté sobre otros contenidos */
+}
+
+.nav_bar a {
+  text-decoration: none;
+  color: white;
+  font-size: var(--font-size-sm);
+  padding: 10px 10px;
+  /* Agregado padding para mejor área de clic */
+}
+
+.nav_bar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Asegura que los enlaces estén centrados */
+  list-style: none;
+  /* Remueve estilos de lista */
+}
+
+.nav_bar li {
+  padding: 10px 20px;
+  /* Espacio entre enlaces */
+  cursor: pointer;
+}
+
+.nav_bar a:hover,
+.nav_bar li:hover {
+  /* {{{ */
+  color: #E0E0E0;
+  /* Subtle light gray for hover effect */
+  /* Resalta el enlace al pasar el mouse */
+}
+
+/* }}} */
+
+/* Estilos para responsividad */
+@media (max-width: 1000px) {
+  /* {{{ */
+}
+
+/* }}} */
+@media (max-width: 768px) {
+
+  /* {{{ */
+  .nav_bar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav_bar ul {
+    flex-direction: column;
+    /* Stack items vertically for mobile */
+    width: 100%;
+  }
+
+  .nav_bar li,
+  .nav_bar a {
+    width: 100%;
+    /* Asegura que los enlaces ocupen todo el ancho */
+    text-align: center;
+    /* Centra el texto de los enlaces */
+    padding: 10px;
+  }
+}
+
+/* }}} */
+
+/* Estilos para el botón de hamburguesa {{{ */
+.hamburger {
+  display: none;
+  /* Oculto por defecto */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger div {
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  width: 30px;
+  /* Ancho de las líneas del botón hamburguesa */
+}
+
+/* }}} */
+/* Media query para pantallas pequeñas {{{ */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    /* Se muestra solo en pantallas pequeñas */
+  }
+
+  .nav_bar ul {
+    display: none;
+    /* Ocultar el menú principal por defecto */
+    flex-direction: column;
+    /* Ensure column direction for active mobile menu */
+    width: 100%;
+    align-items: center;
+
+  }
+
+  .nav_bar.active ul {
+    display: flex;
+    padding: 0;
+    /* Mostrar cuando se activa la hamburguesa */
+  }
+}
+
+/* }}} */
+
+/* Ajustar la visibilidad y estilo de los enlaces cuando el menú está activo */
+.nav_bar.active a,
+.nav_bar.active li {
+  display: block;
+  text-align: center;
+}
+
+/* Styles for the logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* Occupy the full height of the navbar */
+  padding-right: 20px;
+  /* Space between logo and other navbar elements */
+}
+
+.navbar-logo {
+  height: 65px;
+  width: 65px;
+  border-radius: 15%;
+  filter: brightness(1.2) grayscale(0.5) opacity(0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.navbar-logo:hover {
+  filter: brightness(1.5) grayscale(0) opacity(1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+
+/* Responsive adjustments for the logo */
+@media (max-width: 768px) {
+  .logo-container {
+    padding-right: 0px;
+  }
+
+  .navbar-logo {
+    height: 40px;
+    width: 40px;
+    /* Smaller logo on mobile */
+  }
+
+  /* Ensure proper alignment of logo and hamburger on mobile */
+  .nav_bar {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Language Switcher Styles */
+.lang-switcher {
+  position: relative;
+  width: 120px;
+  /* Added a fixed width to prevent shifting */
+}

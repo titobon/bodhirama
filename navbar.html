@@ -1,0 +1,42 @@
+<nav class="nav_bar">
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="multimedia/images/logo_bodhirama.jpeg" alt="Bodhirama Logo" class="navbar-logo">
+        </a>
+    </div>
+    <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    <ul>
+        <li class="index"><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li class="biography"><a href="biography.html" data-i18n="nav_biography">Biography</a></li>
+        <li class="teachings"><a href="teachings.html" data-i18n="nav_teachings">Teachings</a></li>
+        <li class="events"><a href="events.html" data-i18n="nav_events">Events</a></li>
+        <li class="gallery"><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li>
+        <li class="contact"><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+
+        <!-- Language Switcher Dropdown -->
+        <li class="lang-switcher">
+            <button id="lang-switcher-button">
+                <span id="current-lang-flag"></span>
+                <span id="current-lang-abbr"></span>
+            </button>
+            <ul id="lang-switcher-menu" class="hidden">
+                <li>
+                    <a href="#" onclick="changeLanguage('en')">
+                        <span class="flag">🇺🇸</span>
+                        <span>EN</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="changeLanguage('id')">
+                        <span class="flag">🇮🇩</span>
+                        <span>ID</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>

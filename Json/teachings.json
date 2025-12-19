@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "title": {
+      "en": "The Path of Mindfulness",
+      "id": "Jalan Kesadaran"
+    },
+    "date": "2025-01-15",
+    "speaker": {
+      "en": "Ajahn Visalo",
+      "id": "Ajahn Visalo"
+    },
+    "type": {
+      "en": "Dhamma Talk",
+      "id": "Ceramah Dhamma"
+    },
+    "summary": {
+      "en": "An introductory talk on the practice of mindfulness in daily life, emphasizing its benefits for peace and clarity.",
+      "id": "Sebuah ceramah pengantar tentang praktik kesadaran dalam kehidupan sehari-hari, menekankan manfaatnya untuk kedamaian dan kejernihan."
+    },
+    "content_url": "teachings/mindfulness-path.html"
+  },
+  {
+    "id": "2",
+    "title": {
+      "en": "Cultivating Compassion",
+      "id": "Mengembangkan Kasih Sayang"
+    },
+    "date": "2025-02-20",
+    "speaker": {
+      "en": "Ajahn Visalo",
+      "id": "Ajahn Visalo"
+    },
+    "type": {
+      "en": "Dhamma Talk",
+      "id": "Ceramah Dhamma"
+    },
+    "summary": {
+      "en": "A discourse on the development of Metta (loving-kindness) and Karuna (compassion) towards oneself and others.",
+      "id": "Sebuah wacana tentang pengembangan Metta (cinta kasih) dan Karuna (kasih sayang) terhadap diri sendiri dan orang lain."
+    },
+    "content_url": "teachings/compassion-cultivation.html"
+  },
+  {
+    "id": "3",
+    "title": {
+      "en": "Understanding Impermanence",
+      "id": "Memahami Ketidakkekalan"
+    },
+    "date": "2025-03-10",
+    "speaker": {
+      "en": "Ajahn Visalo",
+      "id": "Ajahn Visalo"
+    },
+    "type": {
+      "en": "Essay",
+      "id": "Esai"
+    },
+    "summary": {
+      "en": "An essay exploring the nature of Anicca (impermanence) and its role in liberation from suffering.",
+      "id": "Sebuah esai yang mengeksplorasi sifat Anicca (ketidakkekalan) dan perannya dalam pembebasan dari penderitaan."
+    },
+    "content_url": "teachings/impermanence-essay.html"
+  }
+]
