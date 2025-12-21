@@ -79,4 +79,32 @@ document.addEventListener('DOMContentLoaded', function() {
                 translatePage(getCurrentLanguage());
             }
         });
+
+    const readMoreBtn = document.getElementById('read-more-btn');
+    const moreInfo = document.getElementById('more-info');
+
+    if (readMoreBtn && moreInfo) {
+        readMoreBtn.addEventListener('click', function() {
+            const isHidden = moreInfo.style.display === 'none' || moreInfo.style.display === '';
+            
+            if (isHidden) {
+                moreInfo.style.display = 'block';
+                moreInfo.style.maxHeight = moreInfo.scrollHeight + 'px'; // For CSS transition
+                readMoreBtn.setAttribute('data-i18n', 'read_less');
+                if (typeof translatePage === 'function') {
+                    translatePage(getCurrentLanguage());
+                }
+            } else {
+                moreInfo.style.maxHeight = '0'; // For CSS transition
+                // Hide after transition
+                setTimeout(() => {
+                    moreInfo.style.display = 'none';
+                }, 500); // Should match CSS transition duration
+                readMoreBtn.setAttribute('data-i18n', 'read_more');
+                 if (typeof translatePage === 'function') {
+                    translatePage(getCurrentLanguage());
+                }
+            }
+        });
+    }
 });

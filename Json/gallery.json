@@ -1,0 +1,222 @@
+{
+  "media": [
+    { "type": "image", "src": "multimedia/images/ajahn-visalo.png" },
+    { "type": "image", "src": "multimedia/images/IMG_20251009_095002559.jpg" },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-01 at 9.15.28 PM (1).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-01 at 9.15.28 PM (2).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-01 at 9.15.28 PM.jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-01 at 9.15.29 PM (1).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-01 at 9.15.29 PM.jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-01 at 9.15.30 PM (1).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-01 at 9.15.30 PM.jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-01 at 9.15.31 PM (1).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-01 at 9.15.31 PM (2).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-01 at 9.15.31 PM.jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-07 at 3.31.11 AM.jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-14 at 6.44.52 AM (1).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-14 at 6.44.53 AM (1).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-14 at 6.44.53 AM (2).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-14 at 6.44.53 AM.jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-14 at 6.44.54 AM (1).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-14 at 6.44.54 AM (2).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-14 at 6.44.54 AM.jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-14 at 6.44.55 AM (1).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-14 at 6.44.55 AM.jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-14 at 6.44.56 AM (1).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-14 at 6.44.56 AM (2).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-14 at 6.44.56 AM.jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-14 at 6.44.57 AM (1).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-14 at 6.44.57 AM.jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-17 at 11.12.25 PM.jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-19 at 4.31.03 PM (1).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-19 at 4.31.03 PM.jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-19 at 4.31.04 PM (1).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-19 at 4.31.04 PM.jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-19 at 4.31.05 PM.jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-19 at 4.31.16 PM (1).jpeg"
+    },
+    {
+      "type": "image",
+      "src": "multimedia/images/WhatsApp Image 2025-12-19 at 4.31.16 PM.jpeg"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-01 at 9.15.28 PM (1).mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-01 at 9.15.28 PM.mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-01 at 9.15.29 PM.mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-01 at 9.15.30 PM.mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-07 at 3.31.10 AM (1).mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-07 at 3.31.10 AM (2).mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-07 at 3.31.10 AM.mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-07 at 3.31.11 AM.mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-14 at 6.30.44 AM (1).mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-14 at 6.30.44 AM.mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-14 at 6.30.45 AM (1).mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-14 at 6.30.45 AM (2).mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-14 at 6.30.45 AM.mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-14 at 6.30.46 AM (1).mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-14 at 6.30.46 AM (2).mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-14 at 6.30.46 AM.mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-14 at 6.41.21 AM.mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-14 at 6.41.26 AM (1).mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-14 at 6.41.26 AM.mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-19 at 4.31.17 PM.mp4"
+    },
+    {
+      "type": "video",
+      "src": "multimedia/videos/WhatsApp Video 2025-12-19 at 4.31.18 PM.mp4"
+    }
+  ]
+}

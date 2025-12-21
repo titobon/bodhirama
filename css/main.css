@@ -660,10 +660,25 @@ h4 {
 }
 
 .bio-image {
-  max-width: 100%;
+  max-width: 40%;
   height: auto;
   border-radius: 8px;
-  /* Optional: to give slightly rounded corners */
+  display: block;
+  margin: 20px auto;
+  box-shadow:
+    0 8px 20px 6px rgba(203, 125, 30, 0.85),
+    0 16px 48px 14px rgba(203, 125, 30, 0.55);
+  border: 2px solid #9A6A2E;
+}
+
+@media (max-width: 768px) {
+  .bio-image {
+    max-width: 100%;
+  }
+}
+
+.bio_paragraph {
+  margin: 50px;
 }
 
 /* Filter Styles */
@@ -694,19 +709,22 @@ h4 {
 /* Gallery Styles */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   padding: 20px;
 }
 
 .gallery-item {
   position: relative;
-  /* Needed for the play icon overlay */
   cursor: pointer;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 250px;
+  width: 350px;
+  padding-bottom: 75%;
+  /* 4:3 Aspect Ratio */
 }
 
 .gallery-item.video::after {
@@ -716,16 +734,19 @@ h4 {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 50px;
+  font-size: 60px;
   opacity: 0.8;
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
   pointer-events: none;
-  /* Make sure it doesn't interfere with clicks */
   transition: opacity 0.3s ease;
+  z-index: 1;
 }
 
 .gallery-item img,
 .gallery-item video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -735,6 +756,38 @@ h4 {
 .gallery-item:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1000px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 599px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive adjustments for gallery */
+@media (max-width: 1000px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for tablets */
+  }
+}
+
+@media (max-width: 599px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    /* 1 column for mobile */
+  }
+}
+
+/* Gallery Page Specific Container: Makes the container wider for a more expansive gallery view */
+.container.gallery-container {
+  max-width: 1800px;
 }
 
 /* Modal Styles */
@@ -987,7 +1040,263 @@ h4 {
 @media (max-width: 1000px) {
 
   body::before,
+
   body::after {
+
     display: none;
+
   }
+
+}
+
+
+
+/* Read More Button Styles */
+
+.read-more-btn {
+
+  background-color: transparent;
+
+  border: 1px solid #9A6A2E;
+
+  color: #9A6A2E;
+
+  padding: 10px 20px;
+
+  cursor: pointer;
+
+  margin-left: 50px;
+
+  margin-top: 10px;
+
+  border-radius: 5px;
+
+  font-family: 'Open Sans', sans-serif;
+
+  font-size: var(--font-size-sm);
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+
+
+.read-more-btn:hover {
+
+  background-color: #9A6A2E;
+
+  color: #FAF8F0;
+
+}
+
+
+
+.more-info-content {
+
+  display: none;
+
+  overflow: hidden;
+
+  transition: max-height 0.5s ease-in-out;
+
+  margin-left: 50px;
+
+  margin-right: 50px;
+
+  margin-top: 20px;
+
+}
+
+
+
+/* Visiting Page Styles */
+.visiting-content {
+  padding: 20px 60px;
+  /* Add generous padding */
+  text-align: justify;
+  line-height: 1.6;
+  /* Improve readability */
+}
+
+.visiting-content h2 {
+  margin-left: 0;
+  /* Override the default h2 margin */
+  margin-top: 40px;
+  /* Add space above headings */
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  /* Slightly larger headings */
+}
+
+.visiting-content p {
+  margin-bottom: 20px;
+  /* Space between paragraphs */
+}
+
+.visiting-content ul {
+  list-style-position: outside;
+  padding-left: 40px;
+  /* Indent lists */
+  margin-bottom: 20px;
+}
+
+.visiting-content li {
+  margin-bottom: 10px;
+  /* Space between list items */
+}
+
+.visiting-content hr {
+  border: 0;
+  height: 1px;
+  background-color: #e0e0e0;
+  /* Lighter, more subtle divider */
+  margin: 40px 0;
+  /* More vertical space around dividers */
+}
+
+.visiting-content .map-container {
+  margin-left: 0;
+  /* Ensure map container is not indented */
+  margin-right: 0;
+}
+
+/* Pagination Styles */
+.pagination-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.pagination-container button {
+  background-color: transparent;
+  border: 1px solid #9A6A2E;
+  color: #9A6A2E;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--font-size-md);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination-container button:hover,
+.pagination-container button.active {
+  background-color: #9A6A2E;
+  color: #FAF8F0;
+}
+
+.pagination-container button:disabled {
+  border-color: #cccccc;
+  color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination-ellipsis {
+
+  display: inline-block;
+
+  vertical-align: middle;
+
+  padding: 0 10px;
+
+  color: #cccccc;
+
+}
+
+
+
+/* Contact Page Styles */
+
+.contact-container {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 40px;
+
+  margin-top: 40px;
+
+  line-height: 1.6;
+
+}
+
+
+
+.contact-details {
+
+  flex: 1;
+
+  min-width: 300px;
+
+}
+
+
+
+.contact-map {
+
+  flex: 1;
+
+  min-width: 300px;
+
+  min-height: 400px;
+
+}
+
+
+
+.contact-section h2 {
+
+  margin-left: 0;
+
+  margin-bottom: 10px;
+
+  font-size: 1.8em;
+
+}
+
+
+
+.contact-section p, .contact-section a {
+
+  margin-bottom: 10px;
+
+}
+
+
+
+.contact-note {
+
+  font-size: var(--font-size-sm);
+
+  color: #666;
+
+  margin-top: 10px;
+
+}
+
+
+
+.contact-details hr {
+
+  border: 0;
+
+  height: 1px;
+
+  background-color: #e0e0e0;
+
+  margin: 30px 0;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  .contact-container {
+
+    flex-direction: column;
+
+  }
+
 }
