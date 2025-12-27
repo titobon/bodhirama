@@ -1,0 +1,163 @@
+/*
+  Specific styles for the Teachings page.
+*/
+
+.teachings-video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.teaching-video-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  align-items: flex-start;
+}
+
+.teaching-video-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.teaching-video-info h3 {
+  font-family: 'Lora', serif;
+  color: #9A6A2E;
+  font-size: 1.4em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.teaching-video-info p {
+  color: #424242;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.teachings-list {
+  margin-top: 40px;
+}
+
+.teaching-list-item {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  isolation: isolate;
+}
+
+.teaching-list-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../multimedia/images/siluet_buddha5.png');
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  /* Subtle opacity */
+  z-index: -1;
+  /* Positioned behind the container's content */
+}
+
+.teaching-list-item:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transform: translateY(-3px);
+}
+
+.teaching-list-item h3 {
+  font-family: 'Lora', serif;
+  color: #9A6A2E;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.teaching-list-item p {
+  color: #424242;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.teaching-list-item .read-more-btn {
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.teaching-video-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 30px;
+  /* Add some space below each video card */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.video-two-column-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.video-two-column-layout .teaching-video-info {
+  flex: 1;
+  /* Take up remaining space */
+  padding-right: 20px;
+  /* Space between text and video */
+}
+
+.video-two-column-layout .video-container {
+  flex-shrink: 0;
+  /* Prevent video from shrinking */
+  width: 50%;
+  /* Adjust as needed */
+  max-width: 400px;
+  /* Max width for video to prevent it from becoming too large */
+  min-height: 250px;
+  /* Temporary debug height */
+}
+
+/* Responsive adjustments for two-column video layout */
+@media (max-width: 768px) {
+  .video-two-column-layout {
+    flex-direction: column;
+  }
+
+  .video-two-column-layout .teaching-video-info {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .video-two-column-layout .video-container {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin-bottom: 15px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/news.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -125,6 +126,19 @@
       </div>
       <!-- }}} -->
     </div>
+
+    <!-- Modal for Full News Story -->
+    <div id="news-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-container">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content" id="modal-content-container">
+                <h2 id="modal-title-news"></h2>
+                <p id="modal-date"></p>
+                <div id="modal-full-story"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer {{{  -->
     <div id="footer-container"></div>
     <!-- Footer }}}  -->

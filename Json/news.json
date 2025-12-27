@@ -1,0 +1,114 @@
+[
+  {
+    "id": "1",
+    "title": {
+      "en": "New Website Launch",
+      "id": "Peluncuran Situs Web Baru"
+    },
+    "date": "2025-12-20",
+    "summary": {
+      "en": "We are excited to announce the launch of our new website! Explore the teachings, events, and gallery.",
+      "id": "Kami sangat antusias mengumumkan peluncuran situs web baru kami! Jelajahi ajaran, acara, dan galeri."
+    },
+    "full_story": {
+        "en": "Our new website is officially live! We've redesigned it from the ground up to provide a more peaceful and informative experience for all visitors. The new design is fully responsive, meaning it works beautifully on desktops, tablets, and mobile phones. We've also added a new 'News' section to keep you updated with the latest announcements. We hope you enjoy the new site and find it a valuable resource for your practice.",
+        "id": "Situs web baru kami telah resmi diluncurkan! Kami telah mendesain ulang dari awal untuk memberikan pengalaman yang lebih damai dan informatif bagi semua pengunjung. Desain baru ini sepenuhnya responsif, yang berarti berfungsi dengan indah di desktop, tablet, dan ponsel. Kami juga telah menambahkan bagian 'Berita' baru untuk memberi Anda informasi terbaru tentang pengumuman terbaru. Kami harap Anda menikmati situs baru ini dan menganggapnya sebagai sumber daya yang berharga untuk latihan Anda."
+    }
+  },
+  {
+    "id": "2",
+    "title": {
+      "en": "Vesak Day Celebration",
+      "id": "Perayaan Hari Waisak"
+    },
+    "date": "2025-05-15",
+    "summary": {
+      "en": "Join us for a special Vesak Day celebration, with chanting, meditation, and a Dhamma talk by Ajahn Visalo.",
+      "id": "Bergabunglah bersama kami untuk perayaan Hari Raya Waisak yang istimewa, dengan pembacaan paritta, meditasi, dan ceramah Dhamma oleh Ajahn Visalo."
+    },
+    "full_story": {
+        "en": "Vesak Day is the most important day in the Buddhist calendar, commemorating the birth, enlightenment, and passing away of the Buddha. We will be holding a full-day program at the monastery, starting with a sunrise chanting session, followed by a silent meditation retreat in the morning. In the afternoon, there will be a Dhamma talk by Ajahn Visalo on the significance of Vesak. The day will conclude with a candlelight procession around the main hall. All are welcome to join.",
+        "id": "Hari Waisak adalah hari terpenting dalam kalender Buddhis, untuk memperingati kelahiran, pencerahan, dan wafatnya Sang Buddha. Kami akan mengadakan program sehari penuh di biara, dimulai dengan sesi pembacaan paritta saat matahari terbit, dilanjutkan dengan retret meditasi hening di pagi hari. Pada sore hari, akan ada ceramah Dhamma oleh Ajahn Visalo tentang pentingnya Waisak. Hari itu akan diakhiri dengan prosesi lilin di sekitar aula utama. Semua dipersilakan untuk bergabung."
+    }
+  },
+  {
+    "id": "3",
+    "title": {
+      "en": "New Book Release: 'The Art of Stillness'",
+      "id": "Rilis Buku Baru: 'Seni Keheningan'"
+    },
+    "date": "2025-03-01",
+    "summary": {
+      "en": "Ajahn Visalo's new book, 'The Art of Stillness', is now available. It explores the practice of meditation in daily life.",
+      "id": "Buku baru Ajahn Visalo, 'Seni Keheningan', kini telah tersedia. Buku ini mengupas praktik meditasi dalam kehidupan sehari-hari."
+    },
+    "full_story": {
+        "en": "We are pleased to announce the release of 'The Art of Stillness', the latest book from Ajahn Visalo. In this book, Ajahn Visalo shares his wisdom and experience on how to cultivate a calm and clear mind in the midst of our busy lives. The book is divided into three parts: 'The Foundation of Stillness', 'The Practice of Stillness', and 'The Fruit of Stillness'. It is a practical guide for anyone who wants to deepen their meditation practice and find more peace and happiness in their daily life. The book is available for purchase at the monastery and online.",
+        "id": "Kami dengan senang hati mengumumkan perilisan 'Seni Keheningan', buku terbaru dari Ajahn Visalo. Dalam buku ini, Ajahn Visalo berbagi kebijaksanaan dan pengalamannya tentang cara menumbuhkan pikiran yang tenang dan jernih di tengah kesibukan kita. Buku ini dibagi menjadi tiga bagian: 'Dasar Keheningan', 'Praktik Keheningan', dan 'Buah Keheningan'. Ini adalah panduan praktis bagi siapa saja yang ingin memperdalam latihan meditasi mereka dan menemukan lebih banyak kedamaian dan kebahagiaan dalam kehidupan sehari-hari mereka. Buku ini tersedia untuk dibeli di biara dan online."
+    }
+  },
+  {
+    "id": "4",
+    "title": {
+        "en": "Rains Retreat Concludes",
+        "id": "Retret Musim Hujan Berakhir"
+    },
+    "date": "2025-10-15",
+    "summary": {
+        "en": "The annual Rains Retreat (Vassa) has concluded. We thank all the lay supporters for their generosity.",
+        "id": "Retret Musim Hujan (Vassa) tahunan telah berakhir. Kami berterima kasih kepada semua pendukung awam atas kemurahan hati mereka."
+    },
+    "full_story": {
+        "en": "The three-month Rains Retreat, a time of intensive practice for the monastic community, has come to a close. We are deeply grateful for the incredible support from our lay community, whose daily offerings of food and requisites made this period of dedicated practice possible. The monastery will now return to its regular schedule. We invite you to join us for the upcoming Kathina ceremony to mark the end of this special time.",
+        "id": "Retret Musim Hujan selama tiga bulan, waktu latihan intensif bagi komunitas monastik, telah berakhir. Kami sangat berterima kasih atas dukungan luar biasa dari komunitas awam kami, yang persembahan makanan dan kebutuhan sehari-hari memungkinkan periode latihan yang didedikasikan ini. Biara sekarang akan kembali ke jadwal regulernya. Kami mengundang Anda untuk bergabung dengan kami dalam upacara Kathina yang akan datang untuk menandai akhir dari waktu istimewa ini."
+    }
+  },
+  {
+    "id": "5",
+    "title": {
+        "en": "New Meditation Hall Construction",
+        "id": "Pembangunan Aula Meditasi Baru"
+    },
+    "date": "2025-09-01",
+    "summary": {
+        "en": "Construction of the new meditation hall has begun. We are looking for volunteers to help.",
+        "id": "Pembangunan aula meditasi baru telah dimulai. Kami mencari sukarelawan untuk membantu."
+    },
+    "full_story": {
+        "en": "We are excited to announce that construction has officially begun on our new, larger meditation hall. This new space will allow us to accommodate more practitioners and host larger retreats. The project is expected to take approximately one year to complete. We are looking for volunteers to help with various tasks, from light construction work to cooking for the construction crew. If you are interested in contributing, please contact the monastery office.",
+        "id": "Kami sangat gembira mengumumkan bahwa pembangunan aula meditasi baru kami yang lebih besar telah resmi dimulai. Ruang baru ini akan memungkinkan kami untuk menampung lebih banyak praktisi dan menyelenggarakan retret yang lebih besar. Proyek ini diperkirakan akan memakan waktu sekitar satu tahun untuk diselesaikan. Kami mencari sukarelawan untuk membantu berbagai tugas, dari pekerjaan konstruksi ringan hingga memasak untuk kru konstruksi. Jika Anda tertarik untuk berkontribusi, silakan hubungi kantor biara."
+    }
+  },
+  {
+    "id": "6",
+    "title": {
+        "en": "Ajahn Visalo's Health Update",
+        "id": "Pembaruan Kesehatan Ajahn Visalo"
+    },
+    "date": "2025-08-20",
+    "summary": {
+        "en": "A brief update on Ajahn Visalo's health. He is recovering well from his recent illness.",
+        "id": "Pembaruan singkat tentang kesehatan Ajahn Visalo. Beliau pulih dengan baik dari penyakitnya baru-baru ini."
+    },
+    "full_story": {
+        "en": "We would like to share a brief update on Ajahn Visalo's health. As some of you may know, he was recently unwell. We are happy to report that he is recovering well and is now back to his regular schedule of teaching and practice. Ajahn Visalo expresses his deep gratitude for all the well-wishes and support he received during his illness. He looks forward to seeing you all at the monastery soon.",
+        "id": "Kami ingin berbagi pembaruan singkat tentang kesehatan Ajahn Visalo. Seperti yang mungkin Anda ketahui, beliau baru saja sakit. Kami senang melaporkan bahwa beliau pulih dengan baik dan sekarang telah kembali ke jadwal reguler mengajar dan berlatih. Ajahn Visalo mengucapkan terima kasih yang sebesar-besarnya atas semua harapan baik dan dukungan yang beliau terima selama sakit. Beliau berharap dapat segera bertemu dengan Anda semua di biara."
+    }
+  },
+  {
+    "id": "7",
+    "title": {
+        "en": "Interfaith Dialogue Event",
+        "id": "Acara Dialog Lintas Agama"
+    },
+    "date": "2025-07-10",
+    "summary": {
+        "en": "Ajahn Visalo participated in an interfaith dialogue on the topic of 'Inner Peace in a Troubled World'.",
+        "id": "Ajahn Visalo berpartisipasi dalam acara dialog lintas agama dengan topik 'Kedamaian Batin di Dunia yang Bermasalah'."
+    },
+    "full_story": {
+        "en": "Last week, Ajahn Visalo was invited to speak at an interfaith dialogue organized by the local community. The event brought together leaders from different religious traditions to discuss the importance of inner peace in today's world. Ajahn Visalo shared the Buddhist perspective on this topic, emphasizing the role of mindfulness and compassion in cultivating a peaceful mind. The event was a great success, fostering mutual understanding and respect among the different communities.",
+        "id": "Pekan lalu, Ajahn Visalo diundang untuk berbicara di sebuah dialog lintas agama yang diselenggarakan oleh komunitas lokal. Acara tersebut mempertemukan para pemimpin dari berbagai tradisi agama untuk membahas pentingnya kedamaian batin di dunia saat ini. Ajahn Visalo berbagi perspektif Buddhis tentang topik ini, menekankan peran kesadaran dan welas asih dalam menumbuhkan pikiran yang damai. Acara tersebut sukses besar, menumbuhkan saling pengertian dan penghormatan di antara berbagai komunitas."
+    }
+  }
+]

@@ -61,5 +61,68 @@
       "id": "Sebuah esai yang mengeksplorasi sifat Anicca (ketidakkekalan) dan perannya dalam pembebasan dari penderitaan."
     },
     "content_url": "teachings/impermanence-essay.html"
+  },
+  {
+    "id": "4",
+    "title": {
+      "en": "Meditation Q&A",
+      "id": "T&J Meditasi"
+    },
+    "date": "2025-11-01",
+    "speaker": {
+      "en": "Ajahn Visalo",
+      "id": "Ajahn Visalo"
+    },
+    "type": {
+      "en": "YouTube",
+      "id": "YouTube"
+    },
+    "summary": {
+      "en": "A Q&A session on meditation with Ajahn Visalo.",
+      "id": "Sesi T&J tentang meditasi bersama Ajahn Visalo."
+    },
+    "youtube_id": "wiudWweMJPk"
+  },
+  {
+    "id": "5",
+    "title": {
+      "en": "How to Love Ourselves",
+      "id": "Cara Mencintai Diri Sendiri"
+    },
+    "date": "2025-10-15",
+    "speaker": {
+      "en": "Ajahn Paisal Visalo",
+      "id": "Ajahn Paisal Visalo"
+    },
+    "type": {
+      "en": "YouTube",
+      "id": "YouTube"
+    },
+    "summary": {
+      "en": "A Dhamma talk on self-love.",
+      "id": "Ceramah Dhamma tentang cinta diri."
+    },
+    "youtube_id": "WCKL4taGlYg"
+  },
+  {
+    "id": "6",
+    "title": {
+      "en": "The Threefold Training",
+      "id": "Tiga Latihan"
+    },
+    "date": "2025-09-20",
+    "speaker": {
+      "en": "Ajahn Visalo",
+      "id": "Ajahn Visalo"
+    },
+    "type": {
+      "en": "YouTube",
+      "id": "YouTube"
+    },
+    "summary": {
+      "en": "A Dhamma talk on Dana, Sila, and Bhavana.",
+      "id": "Ceramah Dhamma tentang Dana, Sila, dan Bhavana."
+    },
+    "youtube_id": "c42vtOFI2Cc"
   }
 ]

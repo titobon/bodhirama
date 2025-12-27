@@ -126,6 +126,10 @@ a {
 }
 
 /* }}} */
+.noticias-lista .read-more-btn {
+  align-self: center;
+}
+
 .noticias-lista a {
   /* {{{ */
   color: #8D6E63;
@@ -135,10 +139,20 @@ a {
 }
 
 /* }}} */
+.noticias-lista .read-more-btn {
+  align-self: center;
+  color: #9A6A2E;
+}
+
 .noticias-lista a:hover {
   /* {{{ */
   color: #9A6A2E;
   /* Hover effect with the primary ochre color */
+}
+
+.noticias-lista .read-more-btn:hover {
+  background-color: #9A6A2E;
+  color: #FAF8F0;
 }
 
 /* }}} */
@@ -477,7 +491,8 @@ h4 {
   /* {{{ */
   /* Simplified background for a cleaner, minimalist look */
   background: transparent;
-  /* Remove complex background */
+  /* Biography of Ajahn Visalo
+Remove complex background */
   border-radius: 0;
   /* Remove rounded corners */
   border: none;
@@ -585,25 +600,7 @@ h4 {
 }
 
 /* }}} */
-.news-card {
-  /* {{{ */
-  border: 1px solid #e1e4e8;
-  /* Keep a subtle border */
-  border-radius: 0;
-  /* Removed border-radius */
-  padding: 20px;
-  margin: 10px;
-  width: calc(28% - 20px);
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: none;
-  /* Removed shadow */
-  border: 1px solid #9A6A2E;
-  /* Use a subtle border with the new primary color */
-}
+
 
 /* }}} */
 .news-card p {
@@ -636,12 +633,22 @@ h4 {
 
 /* }}} */
 .read-more {
-  /* {{{ */
-  /* Para que el read more este bonito */
-  font-weight: 700;
+  display: inline-block;
+  font-weight: 600;
   color: #8D6E63;
-  /* Use the new link color */
+  border: 1px solid #8D6E63;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.25s ease;
 }
+
+.read-more:hover {
+  background-color: rgba(141, 110, 99, 0.1);
+  color: #6D4C41;
+  border-color: #6D4C41;
+}
+
 
 /* }}} */
 
@@ -883,6 +890,7 @@ h4 {
     /* Asegura que introductionContainer venga primero */
   }
 
+
   /* }}} */
   .newsSection {
     /* {{{ */
@@ -1051,42 +1059,32 @@ h4 {
 
 
 
-/* Read More Button Styles */
+
+
+
 
 .read-more-btn {
-
   background-color: transparent;
-
   border: 1px solid #9A6A2E;
-
   color: #9A6A2E;
-
   padding: 10px 20px;
-
   cursor: pointer;
-
-  margin-left: 50px;
-
-  margin-top: 10px;
-
   border-radius: 5px;
-
   font-family: 'Open Sans', sans-serif;
-
   font-size: var(--font-size-sm);
-
   transition: background-color 0.3s ease, color 0.3s ease;
-
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-
-
 .read-more-btn:hover {
-
   background-color: #9A6A2E;
-
   color: #FAF8F0;
+}
 
+#read-more-btn {
+  margin-left: 50px;
 }
 
 
@@ -1205,6 +1203,20 @@ h4 {
 
 
 
+.pagination-ellipsis {
+
+  display: inline-block;
+
+  vertical-align: middle;
+
+  padding: 0 10px;
+
+  color: #cccccc;
+
+}
+
+
+
 /* Contact Page Styles */
 
 .contact-container {
@@ -1257,7 +1269,8 @@ h4 {
 
 
 
-.contact-section p, .contact-section a {
+.contact-section p,
+.contact-section a {
 
   margin-bottom: 10px;
 
@@ -1299,4 +1312,30 @@ h4 {
 
   }
 
+}
+
+.contact-note-container {
+  display: flex;
+  align-items: flex-start;
+  /* Aligns items to the top */
+  margin-top: 15px;
+}
+
+.contact-note-bullet {
+  color: #9A6A2E;
+  /* Use the theme's ochre color */
+  font-size: 1.5em;
+  /* Make the bullet a bit larger */
+  margin-right: 10px;
+  line-height: 1;
+  /* Adjust line height to align with text */
+}
+
+.contact-note {
+  font-size: var(--font-size-sm);
+  color: #666;
+  margin-top: 0;
+  /* Reset margin-top as it's now controlled by the container */
+  flex: 1;
+  /* Allow the text to take up the remaining space */
 }
